@@ -56,6 +56,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
       const replyToken = event.replyToken as string;
       const userText = (event.message as Record<string, unknown>).text as string;
+      console.log("[webhook] mode:", event.mode, "| text:", userText);
 
       try {
         const faq = await getFaq();
