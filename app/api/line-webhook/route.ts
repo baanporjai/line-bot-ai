@@ -3,6 +3,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { getFaq } from "@/lib/sheet";
 import { askGemini } from "@/lib/gemini";
 
+export const maxDuration = 30;
+
 const LINE_REPLY_URL = "https://api.line.me/v2/bot/message/reply";
 
 const DEFAULT_MESSAGE =
