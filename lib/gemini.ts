@@ -43,6 +43,7 @@ ${question}
       config: {
         temperature: 1.0,
         maxOutputTokens: 1024,
+        thinkingConfig: { thinkingBudget: 0 },
       },
     });
 
